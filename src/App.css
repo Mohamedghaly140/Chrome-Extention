@@ -1,42 +1,41 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* src/HomeScreen.css */
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; Full height of the viewport */
+  background-color: #f9f9f9; /* Light background color */
+  padding: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.content {
+  text-align: center; /* Center text */
+  max-width: 600px; /* Max width of the content */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  font-size: 1.5rem; /* Font size for the title */
+  color: #333; /* Dark color for the title */
+  margin-bottom: 16px; /* Spacing below the title */
+  margin-top: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+p {
+  font-size: 1rem; /* Font size for the paragraphs */
+  color: #555; /* Gray color for the text */
+  margin: 10px 0; /* Vertical spacing for paragraphs */
 }
 
-.card {
-  padding: 2em;
+.icon-container {
+  margin-top: 16px; /* Spacing above the icon */
 }
 
-.read-the-docs {
-  color: #888;
+.icon {
+  width: 128px; /* Width of the icon */
+  height: 128px; /* Height of the icon */
+  border-radius: 8px; /* Optional rounded corners */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Optional shadow for the icon */
 }
