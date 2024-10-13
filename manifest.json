@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Auto-Complete",
+  "version": "1.0",
+  "description": "Enable or disable autocomplete on password input fields.",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "index.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "icons": {
+    "16": "icon_logo_16px.png",
+    "32": "icon_logo_32px.png",
+    "48": "icon_logo_48px.png",
+    "128": "icon_logo_128px.png"
+  }
+}
