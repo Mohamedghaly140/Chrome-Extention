@@ -8,6 +8,13 @@ const enableAutocomplete = () => {
     passwordInput.setAttribute("type", "password");
     passwordInput.setAttribute("autocomplete", "current-password");
 
+    passwordInput.addEventListener("paste", event => {
+      const pastedData = event.clipboardData.getData("text");
+      if (pastedData) {
+        passwordInput.value = pastedData;
+      }
+    });
+
     const handleFocus = () => {
       passwordInput.setAttribute("autocomplete", "current-password");
     };
