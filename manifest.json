@@ -16,6 +16,9 @@
       "js": ["contentScript.js"]
     }
   ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; script-src-elem 'self' 'unsafe-inline' https://eservice.incometax.gov.eg;"
+  },
   "icons": {
     "16": "icon_logo_16px.png",
     "32": "icon_logo_32px.png",
