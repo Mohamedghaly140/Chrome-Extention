@@ -1,5 +1,3 @@
-console.log("Hello from the content script!");
-
 const enableAutocomplete = () => {
   const passwordInput = document.querySelector(
     'input#userPwdInput[name="pwd"]'
