@@ -5,6 +5,8 @@ const enableAutocomplete = () => {
   if (passwordInput) {
     passwordInput.setAttribute("type", "password");
     passwordInput.setAttribute("autocomplete", "current-password");
+    passwordInput.style.color = "black";
+    passwordInput.style.textShadow = "";
 
     passwordInput.addEventListener("paste", event => {
       const pastedData = event.clipboardData.getData("text");

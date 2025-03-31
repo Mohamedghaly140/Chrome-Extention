@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+dist.crx
+dist.pem
+tsconfig.app.tsbuildinfo
+tsconfig.node.tsbuildinfo
