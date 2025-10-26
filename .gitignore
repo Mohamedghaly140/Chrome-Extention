@@ -26,3 +26,4 @@ dist.crx
 dist.pem
 tsconfig.app.tsbuildinfo
 tsconfig.node.tsbuildinfo
+*.tsbuildinfo
